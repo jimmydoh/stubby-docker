@@ -1,8 +1,8 @@
-name: dev Pull
+name: main Pull
 
 on:
   pull_request:
-    branches: [ "dev" ]
+    branches: [ "main" ]
 
 env:
   REGISTRY: ghcr.io
@@ -10,8 +10,8 @@ env:
 
 
 jobs:
-  build-dev-pull:
-    name: Test Build on 'dev' Pull
+  build-main-pull:
+    name: Test Build on 'main' Pull
     runs-on: ubuntu-latest
     permissions:
       contents: read
