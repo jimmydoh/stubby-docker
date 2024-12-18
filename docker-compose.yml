@@ -1,0 +1,9 @@
+services:
+  stubby:
+    image: ghcr.io/jimmydoh/stubby-docker:latest
+    # OPTIONAL - Map a custom config file
+    #volumes:
+    #  - ./stubby/stubby.yml:/etc/stubby/stubby.yml:ro
+    ports:
+      - 53:53/udp
+    restart: unless-stopped
